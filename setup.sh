@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get update -yq
+sudo apt-get update -yq
 sudo apt-get install -yq python3 \
                          python3-dev \
                          python3-pip --no-install-recommends \
@@ -12,10 +12,10 @@ sudo apt-get install -yq python3 \
                          automake \
                          libtool
 
-source './scripts/zsh.sh'
+sh scripts/zsh.sh
 
-source './scripts/node.sh'
+sh scripts/node.sh
 
-source './scripts/docker.sh'
+sh scripts/docker.sh
 
-source './scripts/lcd.sh'
+sh scripts/lcd.sh
